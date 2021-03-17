@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="item1-flex-rectangle">
+                <div class="button-rect"></div>
+                <div class="button-rect"></div>
+                <div class="button-rect"></div>
+            </div>
+            <div class="item1-flex">
+                <div class="giftcard-font">기프트카드</div>
+            </div>
+        </div>
+        
+        <div class="gap-line"></div>
+
+        <div class="usage-history">
+            <div class="usage-history-font">사용내역</div>
+            <div class="close-button"></div>
+        </div>
+
+        <div class="gap-line"></div>
+
+        <div class="display-card">
+            <div class="card-shape"></div>
+        </div>
+    </div>
+</body>
+<style>
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 760px;
+    border: 1px solid black;
+}
+.header {
+    display: flex;
+    background: #ffe836;
+    height: 56px;
+}
+.gap-line {
+  width: 360px;
+  height: 2px;
+  background-color: #ebebeb;
+}
+.usage-history {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    height: 46px;
+}
+.display-card {
+    background: #f8f8f8;
+    height: 131px;
+}
+.item1-flex-rectangle {
+    width: 62px;
+}
+.button-rect:nth-child(1) {
+    width: 24px;
+    height: 2px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #211e1f;
+}
+.button-rect:nth-child(2) {
+    width: 24px;
+    height: 2px;
+    margin-top: 5px;
+    margin-left: 20px;
+    background-color: #211e1f;
+}
+.button-rect:nth-child(3) {
+    width: 24px;
+    height: 2px;
+    margin-top: 5px;
+    margin-left: 20px;
+    background-color: #211e1f;
+}
+.giftcard-font {
+    margin-top: 14px;
+    font-family: SpoqaHanSans;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+.usage-history-font {
+    margin-left: 20px;
+    font-family: SpoqaHanSans;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+.close-button {
+    align-self: center;
+    margin-right: 14px;
+    width: 18px;
+    height: 18px;
+    background-color: #000000;
+}
+.card-shape {
+    width: 150px;
+    height: 90px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px 0 #cccccc;
+    background-color: #ed8970;
+}
+</style>
+</html>
