@@ -30,6 +30,15 @@
 
         <div class="display-card">
             <div class="card-shape"></div>
+            <div class="card-info">
+                <div class="card-info-font">미셸 새해복많이 카드</div>
+                <div class="price-area">
+                    <div class="price-info-font">32,800</div>
+                    <div class="price-info-font">원</div>
+                </div>
+                
+            </div>
+            
         </div>
     </div>
 </body>
@@ -59,6 +68,8 @@
     height: 46px;
 }
 .display-card {
+    display: flex;
+    align-items: center;
     background: #f8f8f8;
     height: 131px;
 }
@@ -110,9 +121,40 @@
 .card-shape {
     width: 150px;
     height: 90px;
+    margin-left: 20px;
     border-radius: 6px;
     box-shadow: 0 4px 6px 0 #cccccc;
     background-color: #ed8970;
+}
+.card-info {
+    flex-direction: column;
+}
+.card-info-font:nth-child(1) {
+    margin-left: 20px;
+    font-family: SpoqaHanSans;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+.price-info-font:nth-child(1) {
+    margin-top: 2px;
+    margin-left: 20px;
+    font-family: SpoqaHanSans;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+.price-info-font:nth-child(2) {
+    margin-top: 5px;
+    margin-left: 2px;
+    font-family: SpoqaHanSans;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+.price-area {
+    display: flex;
+    align-items: center;
 }
 </style>
 </html>
